@@ -1,6 +1,7 @@
 class MainPagesController < ApplicationController
 
   def index
+    @posts = Post.order('created_at desc').limit(5)
   end
 
   def who_we_are

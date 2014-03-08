@@ -38,7 +38,12 @@
 
       <div class="small-12 columns">
         <h2 class="text-center">What's Happening on the Farm?</h2>
-        
+        <% for post in @posts %>
+          <div>
+            <h3><%= post.title %></h3>
+            <p><%= raw(post.body) %></p>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

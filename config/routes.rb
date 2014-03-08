@@ -1,5 +1,7 @@
 FillMeadowsFarm::Application.routes.draw do
 
+  resources :posts
+
   get "main_pages/who_we_are"
   get "main_pages/how_we_market"
   get "main_pages/how_we_produce"
