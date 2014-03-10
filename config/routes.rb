@@ -1,5 +1,6 @@
 FillMeadowsFarm::Application.routes.draw do
 
+  devise_for :admins
   resources :posts
 
   get "main_pages/who_we_are"

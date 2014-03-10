@@ -16,3 +16,19 @@ footer ul.vcard {
   border-right: 3px dotted red;
   margin-top: 1em;
 }
+
+footer div.admin-list {
+  float: right;
+  margin-right: 3em;
+}
+
+footer div.admin-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+footer div.admin-list h3 {
+  color: white;
+}

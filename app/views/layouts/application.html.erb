@@ -43,6 +43,9 @@
       </section>
     </nav>
 
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <%= yield %>
 
     <footer class="on-bottom">
@@ -52,6 +55,13 @@
         <li>Marc: 812-212-1196</li>
         <li>Claire: 513-608-6585</li>
       </ul>
+
+      <div class="admin-list">
+        <h3>Admin</h3>
+        <ul>
+          <li><%= link_to "Sign In", new_admin_session_path %></li>
+        </ul>
+      </div>
     </footer>
 
     <%= javascript_include_tag "application" %>
